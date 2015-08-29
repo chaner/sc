@@ -6,7 +6,7 @@ sudo gem install bundler
 bundle install
 ```
 
-## Run tests
+## Run specs
 ```
-rake test
+rspec --format documentation
 ```
