@@ -1,8 +1,8 @@
-Eric's first ruby code!
+# Eric's first ruby code!
 
-how to set up
-``sudo gem install bundler
-bundle install``
+## How to set up
+```sudo gem install bundler
+bundle install```
 
-run tests
+## Run tests
 ``rake test``
