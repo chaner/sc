@@ -2,9 +2,13 @@ require 'spec_helper'
 require 'caps'
 
 describe 'caps' do
-  it 'capitalizes every third character, excluding periods' do
+  it 'capitalizes every third character by default, excluding periods' do
     expect(caps('SocialChorus.com')).to eq('soCiaLchOruS.coM')
     expect(caps('shouldWeIgnoreSpaces?')).to eq('shOulDweIgnOreSpaCes?')
+  end
+
+  it 'capitalizes every x character, excluding periods' do
+    expect(caps('SocialChorus.com', 4)).to eq('socIalcHoruS.com')
   end
 
   it 'does not change the original string' do
